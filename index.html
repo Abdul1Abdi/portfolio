@@ -11,73 +11,89 @@
 </head>
 <body>
     <header>
-        <h4>Hey there, I'm</h2>
-        <h1>Abdul Abdi</h1>
-        <h2>Web Developer</h2>
+        <div class="wrapper">
+            <h5>Hey there, I'm</h5>
+            <h1>Abdul Abdi</h1>
+            <h3>Web Developer</h3>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        
     </header>  
     <main>
-        <section  class="bio">
-            <h2>About Me</h2>
-            <p>Hey there! I'm Abdul Abdi. A web developer based in Toronto. Solving problems and learning new things is something I enjoy doing everyday!</p>
-            <p>I have passion for creating excellent user experiences and finding elegant solutions to problems. I am a recent gratuate from <a href="https://junocollege.com/">Juno College</a> with previous learning experiences in Neuroscience at the University of Toronto, and Data Analytics Certificate at Ryerson University.</p>
-            <p>In my free time I like to play games with friends! Whether it be on a board or online.</p>
+        <section>
+            <div class="wrapper about">
+                <div class="aboutText">
+                    <h2>About Me</h2>
+                    <p>Hey there! I'm Abdul Abdi. A web developer based in Toronto. Solving problems and learning new things is something I
+                        enjoy doing everyday!</p>
+                    <p>I have passion for creating excellent user experiences and finding elegant solutions to problems. I am a recent
+                        gratuate from <a href="https://junocollege.com/">Juno College</a> with previous learning experiences in Neuroscience
+                        at the University of Toronto, and Data Analytics Certificate at Ryerson University.</p>
+                    <p>In my free time I like to play games with friends! Whether it be on a board or online.</p>
+                </div>
+                <img src="https://placebear.com/g/600/900" alt="Soon to be picture of me">
+            </div>
+            
         </section>
-        <section class ="skills">
-            <h2>Skills</h2>
-            <ul class="skillsContainer">
-                <li>
-                    <i class="fab fa-html5"></i>
-                    <p>HTML</p>
-                </li>
-                <li>
-                    <i class="fab fa-css3-alt"></i>
-                    <p>CSS</p>
-                </li>
-                <li>
-                    <i class="fab fa-js-square"></i>
-                    <p>JavaScript</p>
-                </li>
-                <li>
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
-                </li>
-                <li>
-                    <i class="fab fa-sass"></i>
-                    <p>Sass</p>
-                </li>
-                <li>
-                    <span class="iconify" data-icon="bx:bxl-firebase"></span>
-                    <p>Firebase</p>
-                </li>
-                <li>
-                    <span class="iconify" data-icon="akar-icons:jquery-fill"></span>
-                    <p>jQuery</p>
-                </li>
-                <li>
-                    <i class="fab fa-python"></i>
-                    <p>Python</p>
-                </li>
-                <li>
-                    <i class="fab fa-github"></i>
-                    <p>Git & GitHub</p>
-                </li>
-                <li>
-                    <i class="fas fa-universal-access"></i>
-                    <p>Accessibility</p>
-                </li>
-                <li>
-                    <span class="iconify" data-icon="cib:mysql"></span>
-                    <p>MySQL</p>
-                </li>
-            </ul>
+        <section>
+            <div class="wrapper skills">
+                <h2>Skills</h2>
+                <ul class="skillsContainer">
+                    <li>
+                        <i class="fab fa-html5"></i>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"></i>
+                        <p>Sass</p>
+                    </li>
+                    <li>
+                        <span class="iconify" data-icon="bx:bxl-firebase"></span>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <span class="iconify" data-icon="akar-icons:jquery-fill"></span>
+                        <p>jQuery</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-python"></i>
+                        <p>Python</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i>
+                        <p>Git & GitHub</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li>
+                        <span class="iconify" data-icon="cib:mysql"></span>
+                        <p>MySQL</p>
+                    </li>
+                </ul>
+            </div>    
         </section>
         <section class="portfolio">
             <h2>Projects</h2>
-            <div>
-                <h3>FFXIV game craftable item search</h3>
-                <p>A web app that allows user to search for craftable items in the game Final Fantasy 14 using
-                    the FFXIV API. Uses useState and useEffect to render and update items
-                    displayed</p>
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <h3>FFXIV game craftable item search</h3>
+                    <p>A web app that allows user to search for craftable items in the game Final Fantasy 14 using
+                        the FFXIV API. Uses useState and useEffect to render and update items
+                        displayed</p>
                     <ul>
                         <li>React</li>
                         <li>Rest API</li>
@@ -86,61 +102,90 @@
                         <a href="https://ffxivcraftsearch.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
                         <a href="https://github.com/Abdul1Abdi/ffxivcraftsearch" target="_blank" rel="noopener noreferrer"> GitHub</a>
                     </div>
-            </div>
-            <div>
-                <h3>Nutrition Navigator</h3>
-                <p>Lets you search for a food and view nutritional info, compare nutrients using charts, and save items with notes. </p>
-                <p>Made with the amazing <a href="https://www.linkedin.com/in/bart-batalinski/">Bart</a> and <a href="https://www.linkedin.com/in/solomon-serry-b931b3225/">Solomon</a></p>
-                <ul>
-                    <li>React</li>
-                    <li>Firebase</li>
-                    <li>Rest API</li>
-                </ul>
-                <div class="sitesContainer">
-                    <a href="https://quizzical-bardeen-ddc132.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
-                    <a href="https://github.com/Abdul-Bart-Solomon-Co/nutrition-navigator" target="_blank" rel="noopener noreferrer"> GitHub</a>
                 </div>
+                <img src="./assets/ffxivcraftsearch.png" alt="Screenshot of FFXIV Craft Search site">
             </div>
-            <div>
-                <h3>Pokemon TCG Card Search</h3>
-                <p>Uses the Pokemon TCG API to display Pokemon card sets using jQuery and
-                allows user to select one and lists cards sorted by their price </p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                    <li>Rest API</li>
-                </ul>
-                <div class="sitesContainer">
-                    <a href="https://abdul1abdi.github.io/PokemonTCG/" target="_blank" rel="noopener noreferrer"> Live</a>
-                    <a href="https://github.com/Abdul1Abdi/PokemonTCG" target="_blank" rel="noopener noreferrer"> GitHub</a>
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <h3>Nutrition Navigator</h3>
+                    <p>Lets you search for a food and view nutritional info, compare nutrients using charts, and save items with notes. </p>
+                    <p>Made with the amazing <a href="https://www.linkedin.com/in/bart-batalinski/">Bart</a> and <a
+                            href="https://www.linkedin.com/in/solomon-serry-b931b3225/">Solomon</a></p>
+                    <ul>
+                        <li>React</li>
+                        <li>Firebase</li>
+                        <li>Rest API</li>
+                    </ul>
+                    <div class="sitesContainer">
+                        <a href="https://quizzical-bardeen-ddc132.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
+                        <a href="https://github.com/Abdul-Bart-Solomon-Co/nutrition-navigator" target="_blank" rel="noopener noreferrer">
+                            GitHub</a>
+                    </div>
                 </div>
+                <img src="./assets/nutrition-navigator.png" alt="Screenshot of nutrition navigator site with apple searched, and nutrional info">
             </div>
-            <div>
-                <h3>Pokemon Type Relations</h3>
-                <p>Lets you select a Pokemon type to see how that type would match up against others
-                </p>
-                <p>Made with the wonderful <a href="https://www.linkedin.com/in/imtiazrashid/">Imtiaz</a>=></p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Rest API</li>
-                </ul>
-                <div class="sitesContainer">
-                    <a href="https://stupefied-yonath-41041e.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
-                    <a href="https://github.com/poke-dex/pokemon" target="_blank" rel="noopener noreferrer"> GitHub</a>
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <h3>Pokemon TCG Card Search</h3>
+                    <p>Uses the Pokemon TCG API to display Pokemon card sets using jQuery and
+                        allows user to select one and lists cards sorted by their price </p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>jQuery</li>
+                        <li>Rest API</li>
+                    </ul>
+                    <div class="sitesContainer">
+                        <a href="https://abdul1abdi.github.io/PokemonTCG/" target="_blank" rel="noopener noreferrer"> Live</a>
+                        <a href="https://github.com/Abdul1Abdi/PokemonTCG" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                    </div>
                 </div>
+                <img src="./assets/pokemon-tcg.png" alt="Screenshot of Pokemon TCG card search site">
             </div>
-            
-        </section>
-        <section class="contact">
-
+            <div class="projectContainer">
+                <div class="projectInfo">
+                    <h3>Pokemon Type Relations</h3>
+                    <p>Lets you select a Pokemon type to see how that type would match up against others
+                    </p>
+                    <p>Made with the wonderful <a href="https://www.linkedin.com/in/imtiazrashid/">Imtiaz</a>=></p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Rest API</li>
+                    </ul>
+                    <div class="sitesContainer">
+                        <a href="https://stupefied-yonath-41041e.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
+                        <a href="https://github.com/poke-dex/pokemon" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                    </div>
+                </div>
+                <img src="./assets/pokemon-type.png" alt="Screen shot of Pokemon type comaparison site">
+            </div>
         </section>
     </main> 
+    <section class="contact">
+        <div>
+            <h4>Let's talk</h4>
+            <p>Feel free to contact me to chat about anything!</p>
+            <ul class="links">
+                <li><a href="https://www.linkedin.com/in/abdul-abdi-5321871b2/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i><p class="sr-only">LinkedIn</p></a></li>
+                <li><a href="https://github.com/Abdul1Abdi" target="_blank" rel="noopener noreferrer"> <i class="fab fa-github"></i><p class="sr-only">Github</p></a></li>
+                <li><a href="mailto: abdul-aziz99@live.com"><i class="fas fa-envelope"></i><p class="sr-only">Email</p></a></li>
+            </ul>
+        </div>
+        <form action="">
+            <h3>Get in touch</h3>
+            <label for="name" class="sr-only">Name</label>
+            <input type="text" id="name" class="name" placeholder="Name">
+            <label for="email" class="sr-only">Email</label>
+            <input type="text" id="email" class="email" placeholder="Email">
+            <label for="message" class="sr-only">Message</label>
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <footer>
-
     </footer>
 </body>
 </html>

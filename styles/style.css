@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Cormorant+Garamond:wght@300;700&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -233,4 +234,168 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+html {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  color: white;
+  background: #0c0f16;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.4;
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-family: "Cormorant Garamond", serif;
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 0 8px rgba(255, 255, 255, 0.05);
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #75dab4;
+  letter-spacing: 5px;
+}
+
+p {
+  color: #c8c8c8;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 2;
+  margin: 0;
+}
+
+section {
+  padding: 100px 0;
+}
+
+header .wrapper {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+header .fas {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutText {
+  width: 50%;
+}
+
+.about img {
+  max-height: 500px;
+  margin-left: 20px;
+}
+
+.skillsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 769px) {
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .aboutText {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .about img {
+    margin-left: 0;
+  }
 }
