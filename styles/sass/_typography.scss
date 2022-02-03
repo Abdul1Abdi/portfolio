@@ -30,7 +30,7 @@ a {
 }
 
 //Typography
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Cormorant+Garamond:wght@300;700&family=Poppins:wght@300&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&family=Cormorant+Garamond:wght@300;700&family=Poppins:wght@300;700&family=Roboto:wght@400;700&display=swap');
 
 body {
     color: white;
@@ -40,7 +40,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
     font-weight: 700;
     margin: 0;
@@ -85,12 +85,27 @@ h5 {
     letter-spacing: 5px;
 }
 
+h6 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
 p {
     color: $pColor;
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 2;
     margin: 0;
+}
+
+p a {
+    color: lighten($mainColor, 10%);
+}
+
+a:hover,
+a:focus {
+    color: $mainColor;
 }
 
 section {

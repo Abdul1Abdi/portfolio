@@ -11,6 +11,7 @@
 .project img {
     max-width: 500px;
     margin: 0 30px;
+    object-fit: contain;
 }
 
 .projectInfo ul{
@@ -34,10 +35,11 @@
 .sitesContainer a {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
+    color: white;
     text-transform: uppercase;
     letter-spacing: 4px;
     padding: 5px 10px;
-    margin-right: 20px;
+    margin: 0 20px 0 5px;
     position: relative;
     transition: color 0.3s ease;
     //Needs positive index to be on top of before
@@ -58,10 +60,26 @@
     transition: width 0.2s ease;
 }
 
-.sitesContainer a:hover{
+.sitesContainer a:hover,
+.sitesContainer a:focus{
     color: $mainColor;
 }
 
-.sitesContainer a:hover::before{
+.sitesContainer a:hover::before,
+.sitesContainer a:focus::before{
     width: calc(100% + 5px);
+}
+
+// Media Queries
+
+@media (max-width: 1000px){
+    .projectContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .portfolio img {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
 }
