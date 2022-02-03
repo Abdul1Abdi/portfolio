@@ -1,0 +1,67 @@
+.portfolio .project:nth-child(even) {
+    background-color: $bg2;
+}
+
+.projectContainer {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.project img {
+    max-width: 500px;
+    margin: 0 30px;
+}
+
+.projectInfo ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.projectInfo li {
+    color: $mainColor;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 8px 12px;
+    margin: 5px 5px 5px 0;
+}
+
+.sitesContainer{
+    margin: 20px 0;
+}
+.sitesContainer a {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 5px 10px;
+    margin-right: 20px;
+    position: relative;
+    transition: color 0.3s ease;
+    //Needs positive index to be on top of before
+    //If negative index is used on before it will be covered by background
+    //And if negative index is used on background a links cant be clicked
+    z-index: 10;
+}
+
+.sitesContainer a::before {
+    content: "";
+    height: 110%;
+    width: 50%;
+    background-color: $button;
+    position: absolute;
+    left: -5px;
+    top: -5%;
+    z-index: -1;
+    transition: width 0.2s ease;
+}
+
+.sitesContainer a:hover{
+    color: $mainColor;
+}
+
+.sitesContainer a:hover::before{
+    width: calc(100% + 5px);
+}

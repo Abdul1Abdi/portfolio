@@ -1,1 +1,12 @@
+$pColor: #c8c8c8;
+$bg1: #0c0f16;
+$bg2: #11141b;
+$li: #151921;
+$button: #21252c;
+$mainColor: #75dab4;
+
 @import "normalize";
+@import "typography";
+@import "header";
+@import "about-skills";
+@import "projects";

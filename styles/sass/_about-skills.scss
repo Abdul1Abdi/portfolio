@@ -1,0 +1,85 @@
+// About Section
+
+.aboutSection{
+    background-color: $bg2;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutText {
+    width: 50%;
+}
+
+.about img {
+    max-height: 500px;
+    margin-left: 20px;
+}
+
+// Skills section
+
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsContainer li {
+    background-color: $li;
+    padding: 10px;
+    height: 130px;
+    width: 130px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.skillsContainer li,
+.skillsContainer li p{
+    transition: transform 0.4s ease;
+}
+
+.skillsContainer li:hover,
+.skillsContainer li:hover p {
+    color: $mainColor;
+    transform: scale(1.1);
+}
+
+.skillsContainer i {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.skillsContainer i,
+.skillsContainer .iconify {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+// Media queries
+
+@media (max-width: 769px) {
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aboutText {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about img {
+        margin-left: 0;
+    }
+    
+}
