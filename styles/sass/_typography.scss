@@ -34,7 +34,7 @@ a {
 
 body {
     color: white;
-    background: #0c0f16;
+    background: $bg1;
     line-height: 1.5;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
@@ -55,20 +55,26 @@ h2 {
     font-size: 4rem;
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: 4px;
     text-shadow: 0 8px rgba(255, 255, 255, 0.05);
     margin-bottom: 50px;
 }
 
 h3 {
-     font-size: 1rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    color: $mainColor;
+    margin-bottom: 20px;
 }
 
 h4 {
-   font-size: 1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 h5 {

@@ -14,13 +14,13 @@
         <div class="wrapper">
             <h5>Hey there, I'm</h5>
             <h1>Abdul Abdi</h1>
-            <h3>Web Developer</h3>
+            <h4>Web Developer</h3>
             <i class="fas fa-chevron-down"></i>
         </div>
         
     </header>  
     <main>
-        <section>
+        <section class="aboutSection">
             <div class="wrapper about">
                 <div class="aboutText">
                     <h2>About Me</h2>
@@ -35,8 +35,8 @@
             </div>
             
         </section>
-        <section>
-            <div class="wrapper skills">
+        <section class="skillsSection">
+            <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="skillsContainer">
                     <li>
@@ -88,79 +88,90 @@
         </section>
         <section class="portfolio">
             <h2>Projects</h2>
-            <div class="projectContainer">
-                <div class="projectInfo">
-                    <h3>FFXIV game craftable item search</h3>
-                    <p>A web app that allows user to search for craftable items in the game Final Fantasy 14 using
-                        the FFXIV API. Uses useState and useEffect to render and update items
-                        displayed</p>
-                    <ul>
-                        <li>React</li>
-                        <li>Rest API</li>
-                    </ul>
-                    <div class="sitesContainer">
-                        <a href="https://ffxivcraftsearch.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
-                        <a href="https://github.com/Abdul1Abdi/ffxivcraftsearch" target="_blank" rel="noopener noreferrer"> GitHub</a>
+            <div class="project">
+                <div class="wrapper projectContainer">
+                    <div class="projectInfo">
+                        <h3>FFXIV game craftable item search</h3>
+                        <p>A web app that allows user to search for craftable items in the game Final Fantasy 14 using
+                            the FFXIV API. Uses useState and useEffect to render and update items
+                            displayed</p>
+                        <ul>
+                            <li>React</li>
+                            <li>Rest API</li>
+                        </ul>
+                        <div class="sitesContainer">
+                            <a href="https://ffxivcraftsearch.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
+                            <a href="https://github.com/Abdul1Abdi/ffxivcraftsearch" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                        </div>
                     </div>
+                    <img src="./assets/ffxivcraftsearch.png" alt="Screenshot of FFXIV Craft Search site">
                 </div>
-                <img src="./assets/ffxivcraftsearch.png" alt="Screenshot of FFXIV Craft Search site">
             </div>
-            <div class="projectContainer">
-                <div class="projectInfo">
-                    <h3>Nutrition Navigator</h3>
-                    <p>Lets you search for a food and view nutritional info, compare nutrients using charts, and save items with notes. </p>
-                    <p>Made with the amazing <a href="https://www.linkedin.com/in/bart-batalinski/">Bart</a> and <a
-                            href="https://www.linkedin.com/in/solomon-serry-b931b3225/">Solomon</a></p>
-                    <ul>
-                        <li>React</li>
-                        <li>Firebase</li>
-                        <li>Rest API</li>
-                    </ul>
-                    <div class="sitesContainer">
-                        <a href="https://quizzical-bardeen-ddc132.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
-                        <a href="https://github.com/Abdul-Bart-Solomon-Co/nutrition-navigator" target="_blank" rel="noopener noreferrer">
-                            GitHub</a>
+            <div class="project">
+                <div class="wrapper projectContainer">
+                    <div class="projectInfo">
+                        <h3>Nutrition Navigator</h3>
+                        <p>Lets you search for a food and view nutritional info, compare nutrients using charts, and save items with notes.
+                        </p>
+                        <p>Made with the amazing <a href="https://www.linkedin.com/in/bart-batalinski/">Bart</a> and <a
+                                href="https://www.linkedin.com/in/solomon-serry-b931b3225/">Solomon</a></p>
+                        <ul>
+                            <li>React</li>
+                            <li>Firebase</li>
+                            <li>Rest API</li>
+                        </ul>
+                        <div class="sitesContainer">
+                            <a href="https://quizzical-bardeen-ddc132.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
+                            <a href="https://github.com/Abdul-Bart-Solomon-Co/nutrition-navigator" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub</a>
+                        </div>
                     </div>
+                    <img src="./assets/nutrition-navigator.png"
+                        alt="Screenshot of nutrition navigator site with apple searched, and nutrional info">
                 </div>
-                <img src="./assets/nutrition-navigator.png" alt="Screenshot of nutrition navigator site with apple searched, and nutrional info">
             </div>
-            <div class="projectContainer">
-                <div class="projectInfo">
-                    <h3>Pokemon TCG Card Search</h3>
-                    <p>Uses the Pokemon TCG API to display Pokemon card sets using jQuery and
-                        allows user to select one and lists cards sorted by their price </p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>jQuery</li>
-                        <li>Rest API</li>
-                    </ul>
-                    <div class="sitesContainer">
-                        <a href="https://abdul1abdi.github.io/PokemonTCG/" target="_blank" rel="noopener noreferrer"> Live</a>
-                        <a href="https://github.com/Abdul1Abdi/PokemonTCG" target="_blank" rel="noopener noreferrer"> GitHub</a>
+            <div class="project">
+                <div class="wrapper projectContainer">
+                    <div class="projectInfo">
+                        <h3>Pokemon TCG Card Search</h3>
+                        <p>Uses the Pokemon TCG API to display Pokemon card sets using jQuery and
+                            allows user to select one and lists cards sorted by their price </p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>Rest API</li>
+                        </ul>
+                        <div class="sitesContainer">
+                            <a href="https://abdul1abdi.github.io/PokemonTCG/" target="_blank" rel="noopener noreferrer"> Live</a>
+                            <a href="https://github.com/Abdul1Abdi/PokemonTCG" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                        </div>
                     </div>
+                    <img src="./assets/pokemon-tcg.png" alt="Screenshot of Pokemon TCG card search site">
                 </div>
-                <img src="./assets/pokemon-tcg.png" alt="Screenshot of Pokemon TCG card search site">
             </div>
-            <div class="projectContainer">
-                <div class="projectInfo">
-                    <h3>Pokemon Type Relations</h3>
-                    <p>Lets you select a Pokemon type to see how that type would match up against others
-                    </p>
-                    <p>Made with the wonderful <a href="https://www.linkedin.com/in/imtiazrashid/">Imtiaz</a>=></p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Rest API</li>
-                    </ul>
-                    <div class="sitesContainer">
-                        <a href="https://stupefied-yonath-41041e.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
-                        <a href="https://github.com/poke-dex/pokemon" target="_blank" rel="noopener noreferrer"> GitHub</a>
+            <div class="project">
+                <div class="wrapper projectContainer">
+                    <div class="projectInfo">
+                        <h3>Pokemon Type Relations</h3>
+                        <p>Lets you select a Pokemon type to see how that type would match up against others
+                        </p>
+                        <p>Made with the wonderful <a href="https://www.linkedin.com/in/imtiazrashid/">Imtiaz</a>=></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Rest API</li>
+                        </ul>
+                        <div class="sitesContainer">
+                            <a href="https://stupefied-yonath-41041e.netlify.app/" target="_blank" rel="noopener noreferrer"> Live</a>
+                            <a href="https://github.com/poke-dex/pokemon" target="_blank" rel="noopener noreferrer"> GitHub</a>
+                        </div>
                     </div>
+                    <img src="./assets/pokemon-type.png" alt="Screen shot of Pokemon type comaparison site">
                 </div>
-                <img src="./assets/pokemon-type.png" alt="Screen shot of Pokemon type comaparison site">
             </div>
         </section>
     </main> 
