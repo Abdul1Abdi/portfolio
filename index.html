@@ -12,15 +12,27 @@
 <body>
     <header>
         <div class="wrapper">
-            <h5>Hey there, I'm</h5>
-            <h1>Abdul Abdi</h1>
-            <h4>Web Developer</h3>
-            <i class="fas fa-chevron-down"></i>
+            <nav>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="headers">
+                <h5>Hey there, I'm</h5>
+                <h1>Abdul Abdi</h1>
+                <h4>Web Developer</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
-        
     </header>  
     <main>
-        <section class="aboutSection">
+        <section class="aboutSection" id="about">
             <div class="wrapper about">
                 <div class="aboutText">
                     <h2>About Me</h2>
@@ -31,11 +43,11 @@
                         at the University of Toronto, and Data Analytics Certificate at Ryerson University.</p>
                     <p>In my free time I like to play games with friends! Whether it be on a board or online.</p>
                 </div>
-                <img src="https://placebear.com/g/600/900" alt="Soon to be picture of me">
+                <img src="./assets/moi.jpg" alt="Profile picture of me!">
             </div>
             
         </section>
-        <section class="skillsSection">
+        <section class="skillsSection" id="skills">
             <div class="wrapper">
                 <h2>Skills</h2>
                 <ul class="skillsContainer">
@@ -86,7 +98,7 @@
                 </ul>
             </div>    
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <h2>Projects</h2>
             <div class="project">
                 <div class="wrapper projectContainer">
@@ -175,7 +187,7 @@
             </div>
         </section>
     </main> 
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2>Contact</h2>
         <div class="wrapper linkFormContainer">
             <div class="contactContainer">
@@ -212,5 +224,6 @@
             <p>Developed by Abdul Abdi</p>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

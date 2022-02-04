@@ -345,6 +345,24 @@ section {
 
 header .wrapper {
   height: 100vh;
+  position: relative;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+header li {
+  padding: 10px 20px;
+}
+
+.headers {
+  height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,16 +373,36 @@ header .wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
 }
 
-header .fas {
+header .fa-chevron-down {
   font-size: 1.5rem;
   position: absolute;
   bottom: 2%;
   left: 50%;
 }
 
+.hamburger {
+  display: none;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: #c8c8c8;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+@media (max-width: 460px) {
+  .hamburger {
+    display: block;
+  }
+
+  header ul {
+    display: none;
+  }
+}
 .aboutSection {
   background-color: #11141b;
 }
@@ -381,12 +419,18 @@ header .fas {
           align-items: center;
 }
 
+.about h2 {
+  text-align: left;
+}
+
 .aboutText {
   width: 50%;
 }
 
 .about img {
-  max-height: 500px;
+  max-height: 350px;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: 20px;
 }
 

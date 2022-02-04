@@ -10,12 +10,17 @@
     align-items: center;
 }
 
+.about h2 {
+    text-align: left;
+}
+
 .aboutText {
     width: 50%;
 }
 
 .about img {
-    max-height: 500px;
+    max-height: 350px;
+    object-fit: contain;
     margin-left: 20px;
 }
 
