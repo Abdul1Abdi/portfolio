@@ -290,6 +290,13 @@ h2 {
   letter-spacing: 4px;
   text-shadow: 0 8px rgba(255, 255, 255, 0.05);
   margin-bottom: 50px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h3 {
@@ -341,6 +348,24 @@ a:focus {
 
 section {
   padding: 100px 0;
+}
+
+.backHeader {
+  position: absolute;
+  font-size: 10vh;
+  top: -5vh;
+  color: #0c0f16;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
+  text-shadow: none;
+  opacity: 0.4;
+  z-index: -10;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 15, 22, 0.97)), to(rgba(12, 15, 22, 0.97))), url(../assets/background.jpg);
+  background-image: linear-gradient(rgba(12, 15, 22, 0.97), rgba(12, 15, 22, 0.97)), url(../assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header .wrapper {
