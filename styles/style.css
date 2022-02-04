@@ -456,6 +456,10 @@ header li {
     top: 50px;
     right: 0;
   }
+
+  header nav a {
+    background: #0c0f16;
+  }
 }
 .aboutSection {
   background-color: #11141b;
