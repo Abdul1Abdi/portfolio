@@ -1,7 +1,15 @@
+header {
+    background-image: linear-gradient(rgba(12,15,22,0.97), rgba(12,15,22,0.97)), url(../assets/background.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 header .wrapper{
     height: 100vh;
     position: relative;
 }
+
 
 header ul {
     display: flex;
